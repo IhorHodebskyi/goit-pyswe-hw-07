@@ -68,7 +68,7 @@ async def main():
 
     print("Grades by Group and Subject:")
     print("-" * 50)
-    print(f"{'Group':<30}{'Subject':<30}{'Grade':<10}")
+    print(f"{'Group':<30}{'Subject':<30}")
     print("-" * 50)
     for group,  grade in grades_by_group_and_subject:
         print(f"{group:<30}{grade:<10}")
@@ -85,10 +85,10 @@ async def main():
 
     print("Courses by Student:")
     print("-" * 50)
-    print(f"{'Student':<30}{'Course':<30}")
+    print(f"{'Student':<30}")
     print("-" * 50)
     for student in courses_by_student:
-        print(f"{student}")
+        print(f"{student[0]}")
     print("="*50)
 
     print("Courses by Student and Teacher:")
